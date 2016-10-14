@@ -7,7 +7,29 @@ class Page extends SiteTree {
 	private static $has_one = array(
 	);
 
-}
+	private static $has_many = array(
+		'TestObjects' => 'TestObject'
+	);
+
+	/**
+	 * @return FieldList
+	 */
+	public function getCMSFields()
+	{
+		$fields = parent::getCMSFields();
+
+		// FeaturedImages
+		// unlink relation rather than deleting it because it's a many-many
+		/** @var GridFieldConfig_RelationEditor $gridFieldConfig */
+		$gridFieldConfig = GridFieldConfig_RecordEditor::create();
+		$testGridField = new GridField('TestObjects', 'Test', $this->TestObjects(),
+			$gridFieldConfig);
+		$fields->addFieldToTab('Root.TestObjects', $testGridField);
+
+		return $fields;
+	}
+
+	}
 class Page_Controller extends ContentController {
 
 	/**
