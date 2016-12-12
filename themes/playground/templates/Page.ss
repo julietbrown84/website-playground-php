@@ -34,133 +34,174 @@ Change it, enhance it and most importantly enjoy it!
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" type="text/css" href="themes/playground/css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="themes/playground/css/demo.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
-    <script type="text/javascript" src="themes/playground/js/greensock/minified/TweenMax.min.js"></script>
-    <!--<script type="text/javascript" src="themes/playground/js/greensock/minified/plugins/DrawSVGPlugin.min.js"></script>
- <!--[if IE]>
- <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-</head>
-
 ]-->
 </head>
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation for Sites</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<div class="row">
+    <div class="large-12 columns">
+        <h1>Welcome to Foundation</h1>
+    </div>
+</div>
 
-<body class="demo-1" class="$ClassName<% if not $Menu(2) %> no-sidebar<% end_if %>" <% if $i18nScriptDirection %>dir="$i18nScriptDirection"<% end_if %>>
-    <% include Header %>
-<div class="container">
-
-
-    <div class="content">
-        <div class="svg-container" id="container">
-            <svg id="loader" width="100%" height="100%" viewBox="0 0 200 200" preserveAspectRatio="xMidYMid meet">
-                <path id="jump" fill="none" stroke="#383845" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M47.5,94.3c0-23.5,19.9-42.5,44.5-42.5s44.5,19,44.5,42.5" />
-                <g stroke="#383845" stroke-width="1">
-                    <ellipse id="circleL" fill="none" stroke-miterlimit="10" cx="47.2" cy="95.6" rx="10.7" ry="2.7" />
-                    <ellipse id="circleR" fill="none" stroke-miterlimit="10" cx="136.2" cy="95.6" rx="10.7" ry="2.7" />
-                </g>
-            </svg>
+<div class="row">
+    <div class="large-12 columns">
+        <div class="callout">
+            <h3>We&rsquo;re stoked you want to try Foundation! </h3>
+            <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
+            <p>Once you've exhausted the fun in this document, you should check out:</p>
+            <div class="row">
+                <div class="large-4 medium-4 columns">
+                    <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
+                </div>
+                <div class="large-4 medium-4 columns">
+                    <p><a href="http://zurb.com/university/code-skills">Foundation Code Skills</a><br />These online courses offer you a chance to better understand how Foundation works and how you can master it to create awesome projects.</p>
+                </div>
+                <div class="large-4 medium-4 columns">
+                    <p><a href="http://foundation.zurb.com/forum">Foundation Forum</a><br />Join the Foundation community to ask a question or show off your knowlege.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="large-4 medium-4 medium-push-2 columns">
+                    <p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
+                </div>
+                <div class="large-4 medium-4 medium-pull-2 columns">
+                    <p><a href="https://twitter.com/ZURBfoundation">@zurbfoundation</a><br />Ping us on Twitter if you have questions. When you build something with this we'd love to see it (and send you a totally boss sticker).</p>
+                </div>
+            </div>
         </div>
     </div>
 </div>
-<!-- /container -->
-<script>
-    (function() {
-        var container = document.getElementById('container');
-        var loader = document.getElementById('loader');
-        var circleL = document.getElementById('circleL');
-        var circleR = document.getElementById('circleR');
-        var jump = document.getElementById('jump');
-        var jumpRef = jump.cloneNode();
 
-        loader.appendChild(jumpRef);
+<div class="row">
+    <div class="large-8 medium-8 columns">
+        <h5>Here&rsquo;s your basic grid:</h5>
+        <!-- Grid Example -->
 
-        TweenMax.set([container, loader], {
-            position: 'absolute',
-            top:'50%',
-            left: '50%',
-            xPercent: -50,
-            yPercent: -50
-        })
+        <div class="row">
+            <div class="large-12 columns">
+                <div class="primary callout">
+                    <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.callout element so you can see where the columns are - it's not required at all for the grid.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="large-6 medium-6 columns">
+                <div class="primary callout">
+                    <p>Six columns</p>
+                </div>
+            </div>
+            <div class="large-6 medium-6 columns">
+                <div class="primary callout">
+                    <p>Six columns</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="large-4 medium-4 small-4 columns">
+                <div class="primary callout">
+                    <p>Four columns</p>
+                </div>
+            </div>
+            <div class="large-4 medium-4 small-4 columns">
+                <div class="primary callout">
+                    <p>Four columns</p>
+                </div>
+            </div>
+            <div class="large-4 medium-4 small-4 columns">
+                <div class="primary callout">
+                    <p>Four columns</p>
+                </div>
+            </div>
+        </div>
 
-        TweenMax.set(jumpRef, {
-            transformOrigin: '50% 110%',
-            scaleY: -1,
-            alpha: 0.05
-        })
+        <hr />
 
-        var tl = new TimelineMax({
-            repeat: -1,
-            yoyo: false
-        });
+        <h5>We bet you&rsquo;ll need a form somewhere:</h5>
+        <form>
+            <div class="row">
+                <div class="large-12 columns">
+                    <label>Input Label</label>
+                    <input type="text" placeholder="large-12.columns" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="large-4 medium-4 columns">
+                    <label>Input Label</label>
+                    <input type="text" placeholder="large-4.columns" />
+                </div>
+                <div class="large-4 medium-4 columns">
+                    <label>Input Label</label>
+                    <input type="text" placeholder="large-4.columns" />
+                </div>
+                <div class="large-4 medium-4 columns">
+                    <div class="row collapse">
+                        <label>Input Label</label>
+                        <div class="input-group">
+                            <input type="text" placeholder="small-9.columns" class="input-group-field" />
+                            <span class="input-group-label">.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="large-12 columns">
+                    <label>Select Box</label>
+                    <select>
+                        <option value="husker">Husker</option>
+                        <option value="starbuck">Starbuck</option>
+                        <option value="hotdog">Hot Dog</option>
+                        <option value="apollo">Apollo</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="large-6 medium-6 columns">
+                    <label>Choose Your Favorite</label>
+                    <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
+                    <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
+                </div>
+                <div class="large-6 medium-6 columns">
+                    <label>Check these out</label>
+                    <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
+                    <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="large-12 columns">
+                    <label>Textarea Label</label>
+                    <textarea placeholder="small-12.columns"></textarea>
+                </div>
+            </div>
+        </form>
+    </div>
 
-        tl.timeScale(3);
+    <div class="large-4 medium-4 columns">
+        <h5>Try one of these buttons:</h5>
+        <p><a href="#" class="button">Simple Button</a><br/>
+            <a href="#" class="success button">Success Btn</a><br/>
+            <a href="#" class="alert button">Alert Btn</a><br/>
+            <a href="#" class="secondary button">Secondary Btn</a></p>
+        <div class="callout">
+            <h5>So many components, girl!</h5>
+            <p>A whole kitchen sink of goodies comes with Foundation. Check out the docs to see them all, along with details on making them your own.</p>
+            <a href="http://foundation.zurb.com/sites/docs/" class="small button">Go to Foundation Docs</a>
+        </div>
+    </div>
+</div>
 
-        tl.set([jump, jumpRef], {
-            drawSVG: '0% 0%'
-        })
-                .set([circleL, circleR], {
-                    attr: {
-                        rx: 0,
-                        ry: 0,
-                    }
-                })
-                .to([jump, jumpRef], 0.4, {
-                    drawSVG: '0% 30%',
-                    ease: Linear.easeNone
-                })
-                .to(circleL, 2, {
-                    attr: {
-                        rx: '+=30',
-                        ry: '+=10'
-                    },
-                    alpha: 0,
-                    ease: Power1.easeOut
-                }, '-=0.1')
-                .to([jump, jumpRef], 1, {
-                    drawSVG: '50% 80%',
-                    ease: Linear.easeNone
-                }, '-=1.9')
-                .to([jump, jumpRef], 0.7, {
-                    drawSVG: '100% 100%',
-                    ease: Linear.easeNone
-                }, '-=0.9')
-                .to(circleR, 2, {
-                    attr: {
-                        rx: '+=30',
-                        ry: '+=10'
-                    },
-                    alpha: 0,
-                    ease: Power1.easeOut
-                }, '-=.5')
-    })();
-</script>
+<script src="js/vendor/jquery.js"></script>
+<script src="js/vendor/what-input.js"></script>
+<script src="js/vendor/foundation.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>
-
-<%-- Please move: Theme javascript (below) should be moved to mysite/code/page.php  --%>
-
-  <div class="wrap ">
-      <div class="sub-menu" >
-          <div class="sub-menu__inner">
-              <a href="#sTop" class="sub-menu__button">Home</a>
-              <a href="#s1" class="sub-menu__button">Section 1</a>
-              <a href="#s2" class="sub-menu__button">Section 2</a>
-              <a href="#s3" class="sub-menu__button">Section 3</a>
-              <a href="#s4" class="sub-menu__button">Section 4</a>
-              <a href="#s5" class="sub-menu__button">Section 5</a>
-              <a href="https://twitter.com/rabmyself" class="sub-menu__button extLink end">External Link</a>
-          </div>
-      </div>
-
-      <div class="section">
-          <div class="section__one">
-              <div class="inner ">
-                  <h1>Sectionasdasda 1 $Form</h1>
-              </div>
-          </div>
-      </div>
-
-    <% include Footer %>
-</body>
-</html>
-

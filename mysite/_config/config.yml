@@ -9,8 +9,10 @@ After:
 # Caution: Indentation through two spaces, not tabs
 # SSViewer:
 #   theme: 'simple'
-SSViewer:
-   theme: 'playground'
+# SSViewer:
+#    theme: 'playground'
 #
 #SSViewer:
 #  theme: 'skeleton-framework-playground'
+SSViewer:
+   theme: 'julietbrowncreativewebsite'

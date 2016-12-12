@@ -177,6 +177,8 @@ h2 {
   font-size: 60px;
   padding-top: 10px;
 }
+
+
 .line {
   height: 1px;
   margin-bottom: 1px;
@@ -185,6 +187,8 @@ h2 {
 
 /* footer */
 footer {
+  background-color: red !important;
+
   margin-top: 30px;
   position: relative;
   text-align: center;
@@ -198,4 +202,5 @@ a {
   transition: 0.5s;
 }
 a:hover {
-  border-bottom-color: rgba(0,0,0,0);
+  border-bottom-color: rgba(0, 0, 0, 0);
+}
